@@ -1,9 +1,20 @@
 {
+  "sops/production/customer-journey.md": "1eoYVPaZvrhYQ8Px_XqWjFtXV9syVhwCuy3lEHhx40m0",
   "sops/production/project-email-exterior.md": "1yZLSV6t7xWM-za3YDnoUykvAPutCbyEiVUmBOQKU4PU",
   "sops/production/project-email-interior.md": "1CjCSP9Tf14XsFEViICWAauO9ZJE6X9Sp5hedZOMtWeQ",
   "sops/production/project-email-stain.md": "1OhggSllWr8Qh_SMahpv0_MB628JX8MzUxX22wIfyDfY",
   "sops/production/pre-job-walkthrough.md": "1MflIOXKWZWhF7HVDluIJA4Dr3NQiXhIloy04Cwcb27I",
   "sops/production/daily-site-visit.md": "1NvuNKUoCXDuuFGwxN2n6_mVtuoaZJ1vsIDkPyTn510M",
   "sops/production/job-site-visit-checklist.md": "1KKVhwocSo2y75I1JawnuFsTNxQFtRXcKUIsNcnSThDU",
-  "sops/production/after-project-survey.md": "13uFhWOLHCKRD7T54glUHUQdQKRnAXwItUKcvabrNDRs"
+  "sops/production/after-project-survey.md": "13uFhWOLHCKRD7T54glUHUQdQKRnAXwItUKcvabrNDRs",
+  "sops/production/cem-intro-call.md": "1xKAW9RBeqXGoTjyo6qTAzfX1d5MlubNGX4MwcBLbM3c",
+  "sops/production/communication-cadence.md": "1Dj5tSiRv4g94pteD7HTbO_Op5CGq1AnNWthjHJeeU-Q",
+  "sops/production/handling-onsite-issues.md": "1K343a6cuxsM9lBtcaloCaA_eWavwJrsLAWPvUAgZTS4",
+  "sops/production/daily-customer-update.md": "1nAubxXSataFYlCUUTJFPi4tLS_pi33JRYBAMQz18R8U",
+  "sops/production/cem-closeout.md": "14Xv85Uic-qnUyqerJPN7Ljh-YT8MH8-_pSLwesDyNk8",
+  "sops/production/review-request.md": "1cKrw08xIADXPtNcckqZlh4GkxgE86a63RFUpRfDW0uQ",
+  "sops/production/thank-you-note.md": "17G5fWHx4LS3F-IkK0Vx9YBZP0L_qJnBE7_sAUz09Oe8",
+  "sops/production/thirty-day-follow-up.md": "1GH9OiDeSqmLz9bF7m-qGP23Xw-YjKXimWt65vYuNq2c",
+  "sops/production/marketing-handoff.md": "1HiSr8fD2CyQERxnb05QxcXoDfeUnJHXAru_vQq7J50g",
+  "sops/production/photo-management.md": "1a-9r1CPPm1HzWtNkxoJDofrLpvdzHkdLpRh6e_AaBMw"
 }
