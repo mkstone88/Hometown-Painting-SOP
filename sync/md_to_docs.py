@@ -12,9 +12,12 @@ Supported constructs:
     - Ordered lists (1. item)
     - Inline bold (**x** / __x__) and italic (*x* / _x_)
     - Inline code spans (wrapped with a mono font style)
+    - Block quotes (rendered with a leading ``> `` prefix)
+    - GFM tables (rendered as plain-text rows separated by `` | ``; header row
+      bolded and followed by a ``---`` divider row)
 
-Anything more exotic (tables, images, block quotes, nested lists more than two
-levels deep) is rendered as plain text so the doc is never broken.
+Anything more exotic (images, nested lists more than two levels deep) is
+rendered as plain text so the doc is never broken.
 """
 
 from __future__ import annotations
@@ -169,6 +172,67 @@ def _parse_paragraphs(markdown: str) -> list[Paragraph]:
         elif tok.type == "hr":
             paragraphs.append(Paragraph(text="—" * 20, style="NORMAL_TEXT"))
             i += 1
+        elif tok.type == "table_open":
+            depth = 1
+            i += 1
+            in_header = False
+            last_col_count = 0
+            while i < len(tokens) and depth > 0:
+                inner = tokens[i]
+                if inner.type == "table_open":
+                    depth += 1
+                    i += 1
+                elif inner.type == "table_close":
+                    depth -= 1
+                    i += 1
+                elif inner.type == "thead_open":
+                    in_header = True
+                    i += 1
+                elif inner.type == "thead_close":
+                    in_header = False
+                    if last_col_count:
+                        divider = " | ".join(["---"] * last_col_count)
+                        paragraphs.append(Paragraph(text=divider, style="NORMAL_TEXT"))
+                    i += 1
+                elif inner.type in ("tbody_open", "tbody_close"):
+                    i += 1
+                elif inner.type == "tr_open":
+                    i += 1
+                    cells: list[tuple[str, list[tuple[int, int, dict[str, Any]]]]] = []
+                    while i < len(tokens) and tokens[i].type != "tr_close":
+                        cell_tok = tokens[i]
+                        if cell_tok.type in ("th_open", "td_open"):
+                            text, runs = _collect_inline(tokens[i + 1])
+                            cells.append((text, runs))
+                            i += 3
+                        else:
+                            i += 1
+                    i += 1
+                    last_col_count = len(cells)
+                    sep = " | "
+                    parts: list[str] = []
+                    row_runs: list[tuple[int, int, dict[str, Any]]] = []
+                    cursor = 0
+                    for idx, (ctext, cruns) in enumerate(cells):
+                        if idx > 0:
+                            parts.append(sep)
+                            cursor += len(sep)
+                        start = cursor
+                        parts.append(ctext)
+                        for rstart, rend, rstyle in cruns:
+                            row_runs.append((start + rstart, start + rend, rstyle))
+                        cursor += len(ctext)
+                        if in_header and ctext:
+                            row_runs.append((start, cursor, {"bold": True}))
+                    paragraphs.append(
+                        Paragraph(
+                            text="".join(parts),
+                            style="NORMAL_TEXT",
+                            text_runs=row_runs,
+                        )
+                    )
+                else:
+                    i += 1
         elif tok.type == "blockquote_open":
             # Collect nested paragraphs until matching close.
             depth = 1
