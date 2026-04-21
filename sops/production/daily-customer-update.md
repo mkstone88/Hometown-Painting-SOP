@@ -1,7 +1,9 @@
 # Daily Customer Update
 
 **Owner:** CEM (Customer Experience Manager)
+
 **Applies to:** Every evening that a crew is on site.
+
 **Related:** `daily-site-visit.md`, `customer-journey.md` (Phase 4)
 
 ## Purpose

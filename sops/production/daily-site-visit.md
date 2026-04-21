@@ -1,7 +1,9 @@
 # Daily Site Visit
 
 **Owner:** CEM (Customer Experience Manager)
+
 **Applies to:** Every active job, every day the crew is on site.
+
 **Related:** `customer-journey.md` (Phase 4), `job-site-visit-checklist.md`
 
 ## Purpose

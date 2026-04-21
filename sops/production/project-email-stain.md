@@ -1,7 +1,9 @@
 # Project Email — Stain
 
 **Owner:** CEM (Customer Experience Manager)
+
 **Applies to:** Every signed staining project, sent the same day the contract is signed.
+
 **Related:** `customer-journey.md` (Phase 1, Step 2)
 
 ## Purpose

@@ -1,7 +1,9 @@
 # Job Site Visit Checklist
 
 **Owner:** CEM (fills out on each visit)
+
 **Applies to:** Every daily site visit during an active project.
+
 **Related:** `daily-site-visit.md`
 
 ## Purpose

@@ -1,7 +1,9 @@
 # Handwritten Thank-You Note
 
 **Owner:** CEM (Customer Experience Manager)
+
 **Applies to:** Every completed project, written and mailed within 48 hours of job completion.
+
 **Related:** `customer-journey.md` (Phase 6)
 
 ## Purpose

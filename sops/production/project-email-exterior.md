@@ -1,7 +1,9 @@
 # Project Email — Exterior
 
 **Owner:** CEM (Customer Experience Manager)
+
 **Applies to:** Every signed exterior painting project, sent the same day the contract is signed.
+
 **Related:** `customer-journey.md` (Phase 1, Step 2)
 
 ## Purpose

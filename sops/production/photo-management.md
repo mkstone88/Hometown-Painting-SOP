@@ -1,7 +1,9 @@
 # Photo Management (Company Cam)
 
 **Owner:** CEM (leads), Crew Leader (contributes)
+
 **Applies to:** Every project, from Day One Kickoff through Final Inspection.
+
 **Status:** Draft — workflow still being defined. Update as the team uses Company Cam in practice.
 
 ## Purpose

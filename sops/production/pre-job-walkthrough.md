@@ -1,7 +1,9 @@
 # Pre-Job Walkthrough Checklist
 
 **Owner:** CEM (leads), Crew Leader (attends)
+
 **Applies to:** Day One Kickoff of every project, before any paint is applied.
+
 **Related:** `customer-journey.md` (Phase 3)
 
 ## Purpose

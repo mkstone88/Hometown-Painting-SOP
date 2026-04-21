@@ -1,7 +1,9 @@
 # Marketing System Handoff
 
 **Owner:** CEM (initiates), Marketing (takes over)
+
 **Applies to:** Every project, immediately after the 30-day follow-up call.
+
 **Related:** `thirty-day-follow-up.md`, `after-project-survey.md`
 
 ## Purpose

@@ -1,7 +1,9 @@
 # Communication Cadence
 
 **Owner:** CEM (Customer Experience Manager)
+
 **Applies to:** Every project, from signing through 30-day follow-up.
+
 **Related:** `customer-journey.md`
 
 ## Purpose

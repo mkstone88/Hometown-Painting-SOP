@@ -1,7 +1,9 @@
 # Customer Journey
 
 **Owner:** Customer Experience Manager (CEM)
+
 **Applies to:** Every residential project from signed contract through 30-day follow up
+
 **Source:** Internal Operations Document • March 2026 • v1.0
 
 The Complete Post-Sale Experience Guide.

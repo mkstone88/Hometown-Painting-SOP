@@ -1,7 +1,9 @@
 # Review Request
 
 **Owner:** CEM (Customer Experience Manager)
+
 **Applies to:** Every project, during the CEM Closeout.
+
 **Related:** `cem-closeout.md`, `thirty-day-follow-up.md`
 
 ## Purpose

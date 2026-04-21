@@ -1,7 +1,9 @@
 # CEM Closeout — Emotional Close
 
 **Owner:** CEM (Customer Experience Manager)
+
 **Applies to:** Every project, immediately after the Final Inspection is signed.
+
 **Related:** `final-inspection-form.md`, `after-project-survey.md`, `review-request.md`
 
 ## Purpose

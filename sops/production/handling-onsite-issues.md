@@ -1,7 +1,9 @@
 # Handling On-Site Issues
 
 **Owner:** CEM (Customer Experience Manager)
+
 **Applies to:** Any issue surfaced during a daily site visit — quality, cleanliness, products, crew behavior, or customer concern.
+
 **Related:** `daily-site-visit.md`, `job-site-visit-checklist.md`, `customer-journey.md` (CEM Authority matrix)
 
 ## Purpose

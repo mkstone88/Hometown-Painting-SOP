@@ -1,7 +1,9 @@
 # CEM Intro Call
 
 **Owner:** CEM (Customer Experience Manager)
+
 **Applies to:** Every new signed project, within 24 hours of contract signing.
+
 **Related:** `customer-journey.md` (Phase 1, Step 3)
 
 ## Purpose

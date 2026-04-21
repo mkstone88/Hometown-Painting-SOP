@@ -1,7 +1,9 @@
 # Final Inspection & Payment Authorization
 
 **Owner:** Crew Leader (runs the inspection with the customer)
+
 **Applies to:** Every project, on the last day of work before payment is requested.
+
 **Related:** `customer-journey.md` (Phase 5), `after-project-survey.md`, `cem-closeout.md`
 
 ## Purpose

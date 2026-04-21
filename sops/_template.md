@@ -1,48 +1,28 @@
 # [SOP Name]
 
-**Owner:** [Role responsible — e.g., CEM, Crew Leader, Sales]
+**Owner:** [Role — e.g. CEM, Crew Leader, Sales]
+
 **Applies to:** [When this SOP is invoked]
-**Last reviewed:** [YYYY-MM-DD]
+
+**Related:** [Comma-separated related filenames]
 
 ## Purpose
 
-Why this SOP exists. What outcome it drives for the customer, the crew, or
-the business.
-
-## Scope
-
-When this SOP applies, and — just as important — when it does not.
+[Why this SOP exists. What outcome it drives for the customer, the crew, or
+the business. One or two short paragraphs.]
 
 ## Procedure
 
-1. Step one.
-2. Step two.
-3. Step three.
+1. [First step.]
+2. [Second step.]
+3. [Third step.]
 
-## Scripts / Templates
+## Script
 
-Any message templates, call scripts, or boilerplate copy the owner uses
-verbatim. Keep them short and in the owner's voice.
-
-> **Example text template**
+> [Script label]
 >
-> Hi [Name], …
-
-## Checklist
-
-- [ ] Item 1
-- [ ] Item 2
-- [ ] Item 3
-
-## Escalation
-
-When to deviate, when to call Matt, and what the authority thresholds are
-(see the `Customer Journey` master doc for the CEM authority matrix).
-
-## Related SOPs
-
-- [Link to related SOP]
+> [Hi [Name], ...]
 
 ## Revision Notes
 
-- YYYY-MM-DD — Initial version.
+- YYYY-MM — Initial version.

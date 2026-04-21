@@ -1,7 +1,9 @@
 # After Project Survey (NPS)
 
 **Owner:** Crew Leader (collects), CEM (follows up on responses)
+
 **Applies to:** Every project, immediately after the Final Inspection is signed.
+
 **Related:** `final-inspection-form.md`, `cem-closeout.md`, `marketing-handoff.md`
 
 ## Purpose
