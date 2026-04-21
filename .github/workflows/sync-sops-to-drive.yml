@@ -4,7 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - "sops/**.md"
+      - "sops/**/*.md"
+      - "sops/*.md"
       - "sop-mapping.json"
       - "sync/**"
       - ".github/workflows/sync-sops-to-drive.yml"
@@ -45,7 +46,9 @@ jobs:
         if: github.event_name == 'push'
         uses: tj-actions/changed-files@v45
         with:
-          files: sops/**/*.md
+          files: |
+            sops/**/*.md
+            sops/*.md
 
       - name: Sync changed SOPs
         if: github.event_name == 'push' && steps.changed.outputs.any_changed == 'true'

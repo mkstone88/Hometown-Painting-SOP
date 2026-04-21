@@ -12,8 +12,12 @@ repo (markdown)  ──►  GitHub Actions  ──►  Google Docs API  ──�
 
 | Path | Purpose |
 |------|---------|
-| `sops/*.md` | The SOPs. Edit these; nothing else. |
-| `sop-mapping.json` | Maps each `sops/*.md` path to the Google Doc ID it targets. |
+| `sops/production/` | Production / delivery SOPs (CEM, crew leader, jobsite). |
+| `sops/sales/` | Sales process SOPs. |
+| `sops/marketing/` | Marketing SOPs. |
+| `sops/appointment-setting/` | Appointment-setting SOPs (Jefferson's team). |
+| `sops/_template.md` | Canonical SOP skeleton. Copy when creating a new SOP. |
+| `sop-mapping.json` | Maps each `sops/**/*.md` path to the Google Doc ID it targets. |
 | `sync/sync_sops.py` | Entry point called by CI. Runnable locally for testing. |
 | `sync/md_to_docs.py` | Converts Markdown into Docs `batchUpdate` requests. |
 | `.github/workflows/sync-sops-to-drive.yml` | Triggers the sync on push. |
@@ -47,18 +51,23 @@ creates new Docs automatically.
 
    ```json
    {
-     "sops/interior-painting.md": "1aBcDeFgHiJkLmNoPqRsTuVwXyZ01234567",
-     "sops/exterior-painting.md": "1ZyXwVuTsRqPoNmLkJiHgFeDcBa98765432"
+     "sops/production/customer-journey.md": "1aBcDeFgHiJkLmNoPqRsTuVwXyZ01234567",
+     "sops/sales/in-home-consultation.md": "1ZyXwVuTsRqPoNmLkJiHgFeDcBa98765432"
    }
    ```
 
 ## Adding a new SOP
 
-1. Create the Google Doc in Drive (this is the only time a human creates a
-   Doc). Share it with the service-account email.
-2. Copy the Doc's file ID from its URL.
-3. Add the `"sops/<file>.md": "<doc-id>"` entry to `sop-mapping.json`.
-4. Commit the new Markdown file + mapping change together. The workflow will
+1. Decide which business system it belongs to: `production`, `sales`,
+   `marketing`, or `appointment-setting`.
+2. Copy `sops/_template.md` into that folder with a kebab-case filename
+   (e.g. `sops/production/daily-site-visit.md`).
+3. Create the Google Doc in Drive (this is the only time a human creates a
+   Doc). Share it with the service-account email with Editor access.
+4. Copy the Doc's file ID from its URL.
+5. Add the `"sops/<system>/<file>.md": "<doc-id>"` entry to
+   `sop-mapping.json`.
+6. Commit the new Markdown file + mapping change together. The workflow will
    populate the Doc on push.
 
 ## Running locally
@@ -68,7 +77,7 @@ pip install -r sync/requirements.txt
 export GOOGLE_SERVICE_ACCOUNT_JSON="$(cat path/to/key.json)"
 
 # Sync specific files
-python sync/sync_sops.py sops/interior-painting.md
+python sync/sync_sops.py sops/production/customer-journey.md
 
 # Sync everything in the mapping
 python sync/sync_sops.py --all
