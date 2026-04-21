@@ -1,1 +1,9 @@
-{}
+{
+  "sops/production/project-email-exterior.md": "1yZLSV6t7xWM-za3YDnoUykvAPutCbyEiVUmBOQKU4PU",
+  "sops/production/project-email-interior.md": "1CjCSP9Tf14XsFEViICWAauO9ZJE6X9Sp5hedZOMtWeQ",
+  "sops/production/project-email-stain.md": "1OhggSllWr8Qh_SMahpv0_MB628JX8MzUxX22wIfyDfY",
+  "sops/production/pre-job-walkthrough.md": "1MflIOXKWZWhF7HVDluIJA4Dr3NQiXhIloy04Cwcb27I",
+  "sops/production/daily-site-visit.md": "1NvuNKUoCXDuuFGwxN2n6_mVtuoaZJ1vsIDkPyTn510M",
+  "sops/production/job-site-visit-checklist.md": "1KKVhwocSo2y75I1JawnuFsTNxQFtRXcKUIsNcnSThDU",
+  "sops/production/after-project-survey.md": "13uFhWOLHCKRD7T54glUHUQdQKRnAXwItUKcvabrNDRs"
+}
